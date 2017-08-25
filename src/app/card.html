@@ -1,18 +1,27 @@
-<div class="card" ng-class="{'optional': $ctrl.optional}" style="width:200px">
-  <span style="border-radius:2px; padding:10px; background-color:black; color:white; margin-left:-10px">{{$ctrl.index}}</span>
-  <div ng-if="$ctrl.type === 'email'" class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-  <div ng-if="$ctrl.type === 'connect'" class="icon"><i class="fa fa-plug" aria-hidden="true"></i></div>
-  <div ng-if="$ctrl.type === 'database'" class="icon"><i class="fa fa-database" aria-hidden="true"></i></div>
-  <div ng-if="$ctrl.type === 'search'" class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
-  <div ng-if="$ctrl.type === 'meeting'" class="icon"><i class="fa fa-comments" aria-hidden="true"></i></div>
-  <div ng-if="$ctrl.type === 'testing'" class="icon"><i class="fa fa-flask" aria-hidden="true"></i></div>
+<div class="card-wrapper" ng-click="flipped=!flipped">
+    <div class="card" ng-class="{'optional': $ctrl.optional, 'flipped': flipped}" style="width:200px">
+      <figure class="front">
+          <span style="border-radius:2px; padding:10px; background-color:black; color:white; margin-left:-10px">{{$ctrl.index}}</span>
+          <div ng-if="$ctrl.type === 'email'" class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+          <div ng-if="$ctrl.type === 'connect'" class="icon"><i class="fa fa-plug" aria-hidden="true"></i></div>
+          <div ng-if="$ctrl.type === 'database'" class="icon"><i class="fa fa-database" aria-hidden="true"></i></div>
+          <div ng-if="$ctrl.type === 'search'" class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+          <div ng-if="$ctrl.type === 'meeting'" class="icon"><i class="fa fa-comments" aria-hidden="true"></i></div>
+          <div ng-if="$ctrl.type === 'testing'" class="icon"><i class="fa fa-flask" aria-hidden="true"></i></div>
 
-  <!-- No type selected -->
-  <div ng-if="!$ctrl.type" class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+          <!-- No type selected -->
+          <div ng-if="!$ctrl.type" class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
 
-  <div class="text-container">
-    <h4><b>{{$ctrl.description}}</b></h4>
-    <p ng-if="$ctrl.timespan">{{$ctrl.timespan}}</p>
-    <p ng-if="!$ctrl.timespan">?</p>
-  </div>
+          <div class="text-container">
+            <h4><b>{{$ctrl.description}}</b></h4>
+            <p ng-if="$ctrl.timespan">{{$ctrl.timespan}}</p>
+            <p ng-if="!$ctrl.timespan">?</p>
+          </div>
+      </figure>
+      <figure class="back">
+        <p class="text-container">
+            Do the smurf dance!
+        </p>
+      </figure>
+    </div>
 </div>

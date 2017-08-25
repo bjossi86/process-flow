@@ -8,8 +8,13 @@ body {
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     cursor: pointer;
-    margin: 10px;
-    background-color: white;
+    // margin: 10px;
+    // background-color: white;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    width: 100%;
+    height: 100%;
 
     &.optional {
       opacity: 0.4;
@@ -17,7 +22,7 @@ body {
 }
 
 /* On mouse-over, add a deeper shadow */
-.card:hover {
+.card .done {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background-color: darken(white, 10%);
 }
@@ -41,4 +46,36 @@ body {
 /* Add rounded corners to the top left and the top right corner of the image */
 img {
     border-radius: 5px 5px 0 0;
+}
+
+.card-wrapper {
+  width: 200px;
+  min-height: 200px;
+  position: relative;
+  perspective: 800px;
+  margin: 10px;
+}
+
+.card figure {
+  background-color: #fff;
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  // background: red;
+}
+.card .back {
+  // background: blue;
+  transform: rotateY( 180deg );
+}
+
+.card.flipped {
+  transform: rotateY( 180deg );
+  // z-index: 9999;
+  // transform: scale(2);
 }
