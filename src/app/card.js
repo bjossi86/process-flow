@@ -10,6 +10,7 @@ module.exports = {
     description: '<',
     timespan: '<',
     optional: '<',
-    index: '<'
+    index: '<',
+    details: '<'
   }
 };

@@ -1,0 +1,92 @@
+[
+    {
+        "index":1,
+        "type":"email",
+        "description":"Fá upplýsingar um VPN",
+        "timespan":"~1 dagur"
+    },
+    {
+        "index":2,
+        "optional":true,
+        "description":"Setja upp VPN",
+        "timespan":"15 mín - 1/2 dagur"
+    },
+    {
+        "index":3,
+        "type":"connect",
+        "description":"Tengjast vél"
+    },
+    {
+        "index": 4,
+        "optional": true,
+        "type": "email",
+        "description": "Setja upp SQL Server",
+        "timespan": "1/2 - 1 klst / 1 dagur"
+    },
+    {
+        "index":6,
+        "type":"email",
+        "description":"Fá réttindi",
+        "timespan":"1/2 - 1 dagur"
+    },
+    {
+        "index":7,
+        "type":"database",
+        "description":"Keyra skriptur",
+        "timespan":"30 mín"
+    },
+    {
+        "index":8,
+        "type":"connect",
+        "description":"Logga inn á vefþjónustu"
+    },
+    {
+        "index":9,
+        "description":"Setja upp forecast service + app"
+    },
+    {
+        "index":10,
+        "type":"connect",
+        "description":"Logga inn"
+    },
+    {
+        "index":11,
+        "optional":true,
+        "description":"Setja upp Chrome",
+        "timespan": "~1/2 dagur"
+    },
+    {
+        "index":12,
+        "optional":"true",
+        "type":"search",
+        "optional": true,
+        "description":"Skoða event viewer",
+        "timespan":"1 klst"
+    },
+    {
+        "index":13,
+        "type":"email",
+        "description":"Fá réttindi",
+        "timespan":"1/2 - 1 dagur"
+    },
+    {
+        "index":14,
+        "type":"meeting",
+        "description":"Mappa staging við ERP",
+        "timespan":"1-2 klst"
+    },
+    {
+        "index":15,
+        "type":"testing",
+        "description":"Manual testing",
+        "timespan":"10 dagar",
+        "details":"Oh this is smurftacular!"
+    },
+    {
+        "index":16,
+        "type":"testing",
+        "description":"Manual testing",
+        "timespan":"10 dagar",
+        "details":"Oh this is smurftacular!"
+    }
+]

@@ -1,17 +1,3 @@
 <div class="card-container">
-  <card index="1" type="'email'" description="'Fá upplýsingar um VPN'" timespan="'~1 dagur'"></card>
-  <card index="2" optional="true" description="'Setja upp VPN'" timespan="'15 mín - 1/2 dagur'"></card>
-  <card index="3" type="'connect'" description="'Tengjast vél'"></card>
-  <card index="4" optional="true" type="'email'" description="'Setja upp SQL Server'" timespan="'1/2 - 1 klst / 1 dagur'"></card>
-  <card index="5" type="'database'" description="'Búa til Prod/Audit/Staging'" timespan="'15 mín'"></card>
-  <card index="6" type="'email'" description="'Fá réttindi'" timespan="'1/2 - 1 dagur'"></card>
-  <card index="7" type="'database'" description="'Keyra skriptur'" timespan="'30 mín'"></card>
-  <card index="8" type="'connect'" description="'Logga inn á vefþjónustu'"></card>
-  <card index="9" description="'Setja upp forecast service + app'"></card>
-  <card index="10" type="'connect'" description="'Logga inn'"></card>
-  <card index="11" optional="true" description="'Setja upp Chrome'" timespan="'~1/2 dagur'"></card>
-  <card index="12" optional="true" type="'search'" optional description="'Skoða event viewer'" timespan="'1 klst'"></card>
-  <card index="13" type="'email'" description="'Fá réttindi'" timespan="'1/2 - 1 dagur'"></card>
-  <card index="14" type="'meeting'" description="'Mappa staging við ERP'" timespan="'1-2 klst'"></card>
-  <card index="15" type="'testing'" description="'Manual testing'" timespan="'10 dagar'"></card>
+  <card ng-repeat="card in $ctrl.cards" index="card.index" type="card.type" description="card.description" timespan="card.timespan" optional="card.optional"></card>
 </div>

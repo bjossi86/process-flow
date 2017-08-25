@@ -1,7 +1,7 @@
 <div class="card-wrapper" ng-click="flipped=!flipped">
     <div class="card" ng-class="{'optional': $ctrl.optional, 'flipped': flipped}" style="width:200px">
       <figure class="front">
-          <span style="border-radius:2px; padding:10px; background-color:black; color:white; margin-left:-10px">{{$ctrl.index}}</span>
+          <span class="numbering">{{$ctrl.index}}</span>
           <div ng-if="$ctrl.type === 'email'" class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
           <div ng-if="$ctrl.type === 'connect'" class="icon"><i class="fa fa-plug" aria-hidden="true"></i></div>
           <div ng-if="$ctrl.type === 'database'" class="icon"><i class="fa fa-database" aria-hidden="true"></i></div>
@@ -20,7 +20,7 @@
       </figure>
       <figure class="back">
         <p class="text-container">
-            Do the smurf dance!
+            {{$ctrl.details}}
         </p>
       </figure>
     </div>
