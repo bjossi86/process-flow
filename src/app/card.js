@@ -1,8 +1,8 @@
 module.exports = {
   template: require('./card.html'),
   controller: function () {
-    this.hello = 'Hello World!';
-    this.$onInit = function () {
+    var vm = this;
+    vm.doDone = function () {
     };
   },
   bindings: {

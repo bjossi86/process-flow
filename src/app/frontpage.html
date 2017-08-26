@@ -1,3 +1,11 @@
 <div class="card-container">
-  <card ng-repeat="card in $ctrl.cards" index="card.index" type="card.type" description="card.description" timespan="card.timespan" optional="card.optional"></card>
+  <card
+      ng-repeat="card in $ctrl.cards"
+      index="card.index"
+      type="card.type"
+      description="card.description"
+      timespan="card.timespan"
+      optional="card.optional"
+      details="card.details">
+  </card>
 </div>

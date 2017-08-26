@@ -3,10 +3,11 @@
         "index":1,
         "type":"email",
         "description":"Fá upplýsingar um VPN",
-        "timespan":"~1 dagur"
+        "timespan":"~1 dagur",
+        "details": "Það þarf oft að biðja um að fá viðeigandi upplýsingar frá kerfisstjórum"
     },
     {
-        "index":2,
+        "index":44,
         "optional":true,
         "description":"Setja upp VPN",
         "timespan":"15 mín - 1/2 dagur"

@@ -8,8 +8,6 @@ body {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
-    cursor: pointer;
     // margin: 10px;
     // background-color: white;
     position: absolute;
@@ -17,11 +15,6 @@ body {
     transition: transform 1s;
     width: 100%;
     height: 100%;
-
-    &.optional {
-    //   opacity: 0.4;
-      border: 2px dotted $gray;
-    }
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -46,12 +39,8 @@ body {
     text-align: center;
 }
 
-/* Add rounded corners to the top left and the top right corner of the image */
-img {
-    border-radius: 5px 5px 0 0;
-}
-
 .card-wrapper {
+  cursor: pointer;
   width: 200px;
   min-height: 200px;
   position: relative;
@@ -67,6 +56,12 @@ img {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 5px; /* 5px rounded corners */
+
+  &.optional {
+  //   opacity: 0.4;
+    border: 2px dotted $gray;
+  }
 }
 
 .card .front {
@@ -78,7 +73,7 @@ img {
 }
 
 .card.flipped {
-  transform: rotateY( 180deg );
+  transform: rotateY( 180deg ) scale(2);
   // z-index: 9999;
   // transform: scale(2);
 }
@@ -86,4 +81,11 @@ img {
 .numbering {
   margin-left:8px;
   margin-top: 8px;
+}
+
+input[type="checkbox"] {
+  margin: 0 auto;
+  right: 10px;
+  position: absolute;
+  top: 10px;
 }
