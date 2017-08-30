@@ -3,6 +3,8 @@ module.exports = {
   controller: function () {
     var vm = this;
     vm.doDone = function () {
+    //   $event.stopPropagation();
+    //   return false;
     };
   },
   bindings: {

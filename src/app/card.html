@@ -1,7 +1,6 @@
 <div class="card-wrapper" ng-click="flipped=!flipped">
-    <div class="card" ng-class="{'flipped': flipped}" style="width:200px">
-      <figure class="front" ng-class="{'optional': $ctrl.optional}">
-          <input type="checkbox" ng-model="$ctrl.done" ng-click="$ctrl.doDone()">
+    <div ng-init="done=false" class="card" ng-class="{'flipped': flipped}" style="width:200px">
+      <figure class="front" ng-class="{'optional': $ctrl.optional, 'done': $ctrl.done}">
           <span class="numbering">{{$ctrl.index}}</span>
           <div ng-if="$ctrl.type === 'email'" class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
           <div ng-if="$ctrl.type === 'connect'" class="icon"><i class="fa fa-plug" aria-hidden="true"></i></div>
@@ -20,6 +19,7 @@
           </div>
       </figure>
       <figure class="back">
+        <input type="checkbox" ng-model="$ctrl.done" ng-click="$event.stopPropagation();flipped = false">
         <p class="text-container">
             {{$ctrl.details}}
         </p>
