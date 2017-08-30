@@ -82,5 +82,12 @@
         "description":"Manual testing",
         "timespan":"10 dagar",
         "details":"Oh this is smurftacular!"
+    },
+    {
+        "index":16,
+        "type":"testing",
+        "description":"QA testing",
+        "timespan":"10 dagar",
+        "details":"Oh this is smurftacular!"
     }
 ]
