@@ -3,7 +3,10 @@ var angular = require('angular');
 var frontpage = require('./app/frontpage');
 var card = require('./app/card');
 require('angular-ui-router');
+var moment = require('moment');
 var routesConfig = require('./routes');
+require('moment-precise-range-plugin');
+require('lodash');
 
 require('./index.scss');
 
@@ -14,4 +17,5 @@ angular
   .module(app, ['ui.router'])
   .config(routesConfig)
   .component('app', frontpage)
-  .component('card', card);
+  .component('card', card)
+  .constant('moment', moment);

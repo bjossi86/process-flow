@@ -1,5 +1,5 @@
-<div class="card-wrapper" ng-click="flipped=!flipped">
-    <div ng-init="done=false" class="card" ng-class="{'flipped': flipped}" style="width:200px">
+<div class="card-wrapper" ng-click="$ctrl.flipped = !$ctrl.flipped">
+    <div ng-init="$ctrl.done=false" class="card" ng-class="{'flipped': $ctrl.flipped}" style="width:200px">
       <figure class="front" ng-class="{'optional': $ctrl.optional, 'done': $ctrl.done}">
           <span class="numbering">{{$ctrl.index}}</span>
           <div ng-if="$ctrl.type === 'email'" class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
@@ -19,10 +19,13 @@
           </div>
       </figure>
       <figure class="back">
-        <input type="checkbox" ng-model="$ctrl.done" ng-click="$event.stopPropagation();flipped = false">
+        <input type="checkbox" ng-model="$ctrl.done" ng-click="$ctrl.startStop($event)">
         <p class="text-container">
             {{$ctrl.details}}
         </p>
+        <button ng-click="$ctrl.startStop($event)" style="position:absolute; right:10px;bottom:10px">
+          <i class="fa fa-play" ng-class="{'fa-play': !$ctrl.isStarted, 'fa-pause': $ctrl.isStarted}" aria-hidden="true"></i>
+        </button>
       </figure>
     </div>
 </div>
