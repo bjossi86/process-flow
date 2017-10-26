@@ -1,6 +1,7 @@
 <div class="card-wrapper" ng-click="$ctrl.flipped = !$ctrl.flipped">
     <div ng-init="$ctrl.done=false" class="card" ng-class="{'flipped': $ctrl.flipped}" style="width:200px">
       <figure class="front" ng-class="{'optional': $ctrl.optional, 'done': $ctrl.done}">
+        <a target="{{$ctrl.link.indexOf('mailto:') > -1 ? '_self' : '_blank'}}" ng-click="$ctrl.startStop()" ng-href="{{$ctrl.link}}">
           <span class="numbering">{{$ctrl.index}}</span>
           <div ng-if="$ctrl.type === 'email'" class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
           <div ng-if="$ctrl.type === 'connect'" class="icon"><i class="fa fa-plug" aria-hidden="true"></i></div>
@@ -17,6 +18,7 @@
             <p ng-if="$ctrl.timespan">{{$ctrl.timespan}}</p>
             <p ng-if="!$ctrl.timespan">?</p>
           </div>
+        </a>
       </figure>
       <figure class="back">
         <input type="checkbox" ng-model="$ctrl.done" ng-click="$ctrl.startStop($event)">

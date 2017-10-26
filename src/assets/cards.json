@@ -4,13 +4,15 @@
         "type":"email",
         "description":"Fá upplýsingar um VPN",
         "timespan":"~1 dagur",
-        "details": "Það þarf oft að biðja um að fá viðeigandi upplýsingar frá kerfisstjórum"
+        "details": "Það þarf oft að biðja um að fá viðeigandi upplýsingar frá kerfisstjórum",
+        "link": "mailto:bjorn@agrdynamics.com?subject=Aðgangsstillingar fyrir AGR5&body=Góðan dag, %0D%0A%0D%0Amig vantar réttindi til að VPN-a mig inn á serverinn hjá ykkur. %0D%0AVærirðu til í að kippa þessu í liðinn?%0D%0A%0D%0A Bestu kveðjur, %0D%0ASmjörgvin Klans"
     },
     {
         "index":2,
         "optional":true,
         "description":"Setja upp VPN",
-        "timespan":"15 mín - 1/2 dagur"
+        "timespan":"15 mín - 1/2 dagur",
+        "link": "https://www.pcworld.com/article/210562/how_set_up_vpn_in_windows_7.html"
     },
     {
         "index":3,
@@ -28,13 +30,15 @@
         "index":6,
         "type":"email",
         "description":"Fá réttindi",
-        "timespan":"1/2 - 1 dagur"
+        "timespan":"1/2 - 1 dagur",
+        "link": "mailto:bjorn@agrdynamics.com?subject=Aðgangsstillingar fyrir AGR5&body=Góðan dag, %0D%0A%0D%0Amig vantar réttindi til að VPN-a mig inn á serverinn hjá ykkur. %0D%0AVærirðu til í að kippa þessu í liðinn?%0D%0A%0D%0A Bestu kveðjur, %0D%0ASmjörgvin Klans"
     },
     {
         "index":7,
         "type":"database",
         "description":"Keyra skriptur",
-        "timespan":"30 mín"
+        "timespan":"30 mín",
+        "link": "http://tpcg.io/sUrXBP"
     },
     {
         "index":8,
